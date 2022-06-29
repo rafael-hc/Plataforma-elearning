@@ -1,4 +1,3 @@
-import { gql, useMutation } from "@apollo/client";
 import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
@@ -28,17 +27,17 @@ export function Subscribe() {
 
     return (
         <div className="min-h-screen min-w-[351px] bg-blur bg-cover bg-no-repeat flex flex-col items-center">
-            <div className="w-full max-w-[1100px] flex flex-col md:flex-row items-center justify-between mt-20 px-4">
-                <div className="max-w-[640px] min-w-[351px] flex flex-col md:block md:pr-4 justify-center items-center">
+            <div className="w-full max-w-[1100px] flex flex-col md:flex-row items-center justify-between mt-20">
+                <div className="max-w-[640px] min-w-[351px] flex flex-col md:block md:pr-4 justify-center items-center text-center md:text-left px-6">
                     <Logo />
-                    <h1 className="mt-8 text-[2.5rem] leading-tight ">
-                        Construa uma <strong className="text-blue-500">aplicação completa</strong>, do zero, com <strong className="text-blue-500">React</strong>
+                    <h1 className="mt-8 text-3xl md:text-[2.5rem] md:leading-tight">
+                        Construa uma <strong className="text-blue-500 font-semibold">aplicação completa</strong>, do zero, com <strong className="text-blue-500">React</strong>
                     </h1>
-                    <p className="mt-4 text-gray-200 leading-relaxed text-justify">
+                    <p className="mt-4 text-gray-200 leading-relaxed">
                         Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.
                     </p>
                 </div>
-                <div className="p-8 mt-4 bg-gray-700 border border-gray-500 rounded">
+                <div className="p-8 mt-4 bg-gray-700 border border-gray-500 rounded w-full md:w-auto">
                     <strong className="text-2xl mb-6 block">Inscreva-se gratuitamente</strong>
 
                     <form onSubmit={handleSubscribe} className="flex flex-col gap-2 w-full">
