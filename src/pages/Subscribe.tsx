@@ -3,7 +3,7 @@ import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { useCrateSubscriberMutation } from "../graphql/generated";
-
+import urlIgm from '../../public/images/code-mockup.png'
 
 
 export function Subscribe() {
@@ -64,7 +64,7 @@ export function Subscribe() {
                     </form>
                 </div>
             </div>
-            <img src="/images/code-mockup.png" className="mt-10" alt="" />
+            <img src={urlIgm} className="mt-10" alt="" />
         </div>
     );
 }
