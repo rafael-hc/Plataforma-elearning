@@ -1,4 +1,4 @@
-import { DefaultUi, Player, Youtube } from "@vime/react";
+import { Controls, DefaultUi, PipControl, Player, Youtube } from "@vime/react";
 import { CaretRight, DiscordLogo, FileArrowDown, Lightning } from "phosphor-react";
 
 import '@vime/core/themes/default.css'
@@ -35,6 +35,9 @@ export function Video(props: VideoProps) {
                     <Player>
                         <Youtube videoId={data.lesson.videoId} key={data.lesson.videoId} />
                         <DefaultUi />
+                        <Controls>
+                            <PipControl />
+                        </Controls>
                     </Player>
                 </div>
             </div>

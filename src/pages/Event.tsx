@@ -19,7 +19,7 @@ export function Event() {
                             ? <Video lessonSlug={slug} />
                             : <div className=" flex-1" />
                         }
-                        <Popover.Panel className="absolute z-10">
+                        <Popover.Panel className="absolute z-1000">
                             <Sidebar />
                         </Popover.Panel>
                         <div className="hidden md:block">
